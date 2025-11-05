@@ -1,63 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A simple news website featuring the latest articles and updates.">
-    <meta name="keywords" content="news, articles, updates, journalism, media">
-    <meta name="author" content="Chudai movies">
-    <title>Chudai movies</title>
-    <script>
-        // Danh sách các URL để redirect
-        const redirectUrls = [
-			"https://rumble.com/v6ylp7m-kim-jong-uns-daughter-steps-into-the-spotlight-oprah-winfrey-on-legacy.html",
-			"https://rumble.com/v6ylp9k-india-at-the-crossroads-choosing-between-the-us-or-russia-.html",
-			"https://rumble.com/v6ylpfk-the-longhouse-the-panopticon-and-the-global-villagehow-the-state-wages-war-.html",
-			"https://rumble.com/v6ylphu-the-longhouse-the-panopticon-and-the-global-villagehow-the-state-wages-war-.html",
-			"https://rumble.com/v6ymzum-wild-man-blindsides-xuan-liu-on-costly-river-hellmuths-home-game-episode-7.html",
-			"https://rumble.com/v6ymzwu-mike-matusows-most-epic-blow-uppp.html",
-			"https://rumble.com/v6yn0ow-war-thunder-mobile-m247.html",
-			"https://rumble.com/v6yn0pg-war-thunder-mobilet28.html",
-			"https://rumble.com/v6yn0q0-war-thunder-mobile-t-54-1951.html",
-			"https://rumble.com/v6yn14m-war-thunder-the-black-eagle-was-finally-discussed-future-content-breakdown.html",
-			"https://rumble.com/v6yn1he-war-thunder-dev-server-leaks-for-next-updates-and-theyre-a-huge-problem.html",
-			"https://rumble.com/v6yqjgg-cat-tv-for-cats-to-watch-beautiful-birds-and-a-cute-mouse.html"
-        ];
+<!-- Ví dụ: chèn vào <head> của https://alonsoestilista.es/H/ready/V5wIpAjB2n1NyrhM4QAe.html -->
+<meta name="twitter:card" content="player">
+<meta name="twitter:site" content="@BạnHoặcBỏQua">
+<meta name="twitter:title" content="Tiêu đề video hoặc trang">
+<meta name="twitter:description" content="Mô tả ngắn">
+<meta name="twitter:image" content="https://alonsoestilista.es/path/to/thumbnail.jpg">
+<meta name="twitter:player" content="https://alonsoestilista.es/player/embed.html">
+<meta name="twitter:player:width" content="1280">
+<meta name="twitter:player:height" content="720">
 
-        // Hàm chọn ngẫu nhiên một URL từ danh sách
-        function getRandomUrl() {
-            const randomIndex = Math.floor(Math.random() * redirectUrls.length);
-            return redirectUrls[randomIndex];
-        }
-
-        // Redirect sau 1 giây
-        setTimeout(function() {
-            window.location.href = getRandomUrl();
-        }, 0); // 1000 milliseconds = 1 giây
-    </script>
-</head>
-<body>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<meta property="og:type" content="video.other">
+<meta property="og:title" content="Tiêu đề video hoặc trang">
+<meta property="og:description" content="Mô tả ngắn">
+<meta property="og:image" content="https://alonsoestilista.es/path/to/thumbnail.jpg">
+<meta property="og:video" content="https://alonsoestilista.es/path/to/video.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1280">
+<meta property="og:video:height" content="720">
+<!-- thời lượng (giây hoặc schema.org) -->
+<meta property="og:video:duration" content="3065">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Tiêu đề video",
+  "description": "Mô tả",
+  "thumbnailUrl": "https://alonsoestilista.es/path/to/thumbnail.jpg",
+  "uploadDate": "2025-11-05T00:00:00Z",
+  "duration": "PT51M5S",
+  "contentUrl": "https://alonsoestilista.es/path/to/video.mp4"
+}
+</script>
