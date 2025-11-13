@@ -2,33 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>XXX</title>
+  <title></title> <!-- Title will be set by JavaScript -->
   <meta name="description" content="">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://doods.it.com/">
-  <meta property="og:title" content="65:44">
+  <meta property="og:title" content=""> <!-- og:title will be set by JavaScript -->
   <meta property="og:description" content="">
   <meta property="og:updated_time" content="1781654966">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="65:44">
+  <meta name="twitter:title" content=""> <!-- twitter:title will be set by JavaScript -->
   <meta name="twitter:description" content="">
-  <meta property="og:image" content="https://i.ibb.co/JFH6tYtj/v-Y6WB8j.png">
-  <meta name="twitter:image" content="https://i.ibb.co/JFH6tYtj/v-Y6WB8j.png">
+  <!-- Meta tags for images, will be set by JavaScript -->
+  <meta property="og:image" content="">
+  <meta name="twitter:image" content="">
   <noscript>
-  <meta http-equiv="refresh" content="0;https://chudaitop1.site/">
+    <meta http-equiv="refresh" content="0;https://chudaitop1.site/">
   </noscript>
-    <script>
-      setTimeout(function() {
-          window.location.href = "https://chudaitop1.site/";
-      }, 1000); // 1000 milliseconds = 1 seconds
+  <script>
+    // Array of image URLs
+    const images = [
+      "https://i.ibb.co/fzWhJs92/2025-05-27-01-43-51-Greenshot.png",
+      "https://i.ibb.co/TDmDHvRV/2025-05-27-01-43-35-Greenshot.png",
+      "https://i.ibb.co/d4Hx5FJS/2025-05-27-01-42-58-Greenshot.png",
+      "https://i.ibb.co/TB96c5Kh/2025-05-27-01-42-55-Greenshot.png",
+      "https://i.ibb.co/39cfv4P7/2025-05-27-01-42-54-Greenshot.png",
+      "https://i.ibb.co/r2XFynpZ/2025-05-27-01-42-52-Greenshot.png",
+      "https://i.ibb.co/LDSC7pzh/2025-05-27-01-42-50-Greenshot.png",
+      "https://i.ibb.co/V0vXszV1/2025-05-27-01-42-47-Greenshot.png",
+      "https://i.ibb.co/GfjvQ4Zd/2025-05-27-01-42-46-Greenshot.png",
+      "https://i.ibb.co/8D69Hg8b/2025-05-24-22-58-33-Greenshot.png",
+      "https://i.ibb.co/1YD30ssV/2025-05-24-22-58-27-Greenshot.png",
+      "https://i.ibb.co/rGQZqfNK/2025-05-24-22-58-24-Greenshot.png",
+      "https://i.ibb.co/v40pf7P8/2025-05-24-22-58-19-Greenshot.png",
+      "https://i.ibb.co/sJmNPhSn/2025-05-24-22-58-16-Greenshot.png",
+      "https://i.ibb.co/rNKJ5x4/2025-05-24-22-58-14-Greenshot.png",
+      "https://i.ibb.co/TDLT8gjf/2025-05-24-22-58-12-Greenshot.png",
+      "https://i.ibb.co/hFt9MmXD/2025-05-24-22-58-06-Greenshot.png",
+      "https://i.ibb.co/BKvQfSrL/2025-05-24-22-58-03-Greenshot.png",
+      "https://i.ibb.co/9kqgPJyP/2025-05-24-22-57-58-Greenshot.png",
+      "https://i.ibb.co/kND406Q/2025-05-24-22-57-52-Greenshot.png",
+      "https://i.ibb.co/nqWbpX6K/2025-05-24-22-57-45-Greenshot.png",
+      "https://i.ibb.co/21LM79wN/2025-05-24-22-57-44-Greenshot.png",
+      "https://i.ibb.co/JwdPhbVJ/2025-05-24-22-56-49-Greenshot.png",
+      "https://i.ibb.co/6RBJN4Nj/2025-05-24-22-56-46-Greenshot.png",
+      "https://i.ibb.co/mVnHvt5n/2025-05-24-22-55-44-Greenshot.png",
+      "https://i.ibb.co/PZLfL2FQ/2025-05-24-22-55-36-Greenshot.png",
+      "https://i.ibb.co/vvP915rT/2025-05-24-22-55-35-Greenshot.png",
+      "https://i.ibb.co/d0LMzdXm/2025-05-24-22-55-32-Greenshot.png",
+      "https://i.ibb.co/zHxScQYd/2025-05-24-22-55-30-Greenshot.png",
+      "https://i.ibb.co/RTj53nT5/2025-05-24-22-55-29-Greenshot.png",
+      "https://i.ibb.co/gL44Lr2g/2025-05-24-22-55-26-Greenshot.png",
+      "https://i.ibb.co/bgZ1LqFY/2025-05-24-22-55-25-Greenshot.png"
+    ];
+
+    // Array of titles
+    const titles = [
+      "XXX",
+      "New Title 1",
+      "New Title 2",
+      "Another Title"
+    ];
+
+    // Randomly select an image
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+
+    // Randomly select a title
+    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+
+    // Update image meta tags
+    document.querySelector('meta[property="og:image"]').setAttribute("content", randomImage);
+    document.querySelector('meta[name="twitter:image"]').setAttribute("content", randomImage);
+
+    // Update title tags
+    document.title = randomTitle; // Set <title>
+    document.querySelector('meta[property="og:title"]').setAttribute("content", randomTitle);
+    document.querySelector('meta[name="twitter:title"]').setAttribute("content", randomTitle);
+
+    // Redirect after 1 second
+    setTimeout(function() {
+      window.location.href = "https://chudaitop1.site/";
+    }, 1000);
   </script>
 </head>
 <body>
   <h1>Checking your location and redirecting...</h1>
 </body>
 </html>
-
-
-
-
-
